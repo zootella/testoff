@@ -1,0 +1,109 @@
+
+
+
+
+[test]
+
+use tape
+instead of unique function names, keep in a big array of keywords and functions in objects
+trycatch to fail and keep going
+invent trick to forget done and keep going
+listen for uncaught exceptions in callbacks to fail that test and keep going
+
+make sure you can always see
+exception with full call stack
+filenames and full line numbers
+
+
+try out mocha's nyan cat runner
+
+
+
+
+
+
+run the mocha nyan cat
+
+
+
+
+try out some custom tap reporters
+
+
+
+
+>make the popquiz folder, using tape
+trycatch to fail and keep going
+come up with a trick to not done and keep going
+listen for uncaught exceptions to fail that test and keep going
+
+
+
+
+
+
+if the failure involves an exception, you want to see the whole exception, including the call stack. mocha isn't doing that with the default reporter
+
+
+
+
+
+
+
+
+
+what are the reasons you couldn't make pop quiz now out of tape?
+
+
+to make an exception not crash the entire process, just trycatch wrap each call, and then fail the test that throws up at you, and keep going
+same thing for not done, or do another empty test afterwards to see if it notices something is wrong
+
+what about subscribing node to the uncaught exception thing
+how does that work
+does that catch the one that throws in the next turn of the event loop
+
+write a little sample that demonstrates solving these two problems
+
+
+
+
+
+
+
+>your ultimate testrunner
+
+would have a box at the top where you type tags, or blank or "all" to run all tags
+when it runs, it collects tags, and shows how many oks it got on each tag
+no, it does this only on the first tag, runs based on all tags, but reports based only on the first tag
+
+
+ok yeah and then
+if there's an exception, you can see it, and the full call stack
+if something fails or throws, it keeps going
+if something logs, it shows the log
+
+
+outputs to the command line or browser
+becomes familiar spirit
+
+
+>how you make it
+
+use tape
+run tests in try/catch, catch an exception, explicitly fail the test
+use a json converter
+connect/disconnect to stdout to grab and parse the output
+connect/disconnect node's uncaught exception and promise to keep going, you will still need this for
+
+insert a dummy test afterwards to fix the not done problem
+
+
+
+
+
+
+
+
+
+
+
