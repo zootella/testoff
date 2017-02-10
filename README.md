@@ -10,27 +10,32 @@ a cage match of popular node test frameworks, including:
 
 a gauntlet of challenges for each to face, including:
 
-* test ok
-* second test in a file
-* more tests in another file
+* basic, file1
+  * test ok
+  * second test in a file
+  * more tests in another file
 
-* log within a test
-* accidentally cover over a test
-* ok false
-* explicit fail
-* throw an exception
-* should throw an exception
-* forget to call done
+* advanced, file2
+  * log within a test
+  * accidentally cover over a test
+  * ok false
+  * explicit fail
+  * throw an exception
+  * should throw an exception
+  * forget to call done
 
-* finish in the next cycle
-* forget to finish in the next cycle
-* ok false in the next cycle
-* throw in the next cycle
+* asynchronous, file2
+  * finish in the next cycle
+  * forget to finish in the next cycle
+  * ok false in the next cycle
+  * throw in the next cycle
 
-* make it to the last test
+* always, file2
+  * make it to the last test
 
-* steps that take seconds
-* same thing afterwards
+* long-running, file3
+  * steps that take seconds
+  * same thing afterwards
 
 and a wacky set of environments and goals, nicknamed:
 
