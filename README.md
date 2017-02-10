@@ -10,12 +10,10 @@ a cage match of popular node test frameworks, including:
 
 a gauntlet of challenges for each to face, including:
 
-basic, file1
 * test ok
 * second test in a file
 * more tests in another file
 
-advanced, file2
 * log within a test
 * accidentally cover over a test
 * ok false
@@ -24,16 +22,13 @@ advanced, file2
 * should throw an exception
 * forget to call done
 
-asynchronous, file2
 * finish in the next cycle
 * forget to finish in the next cycle
 * ok false in the next cycle
 * throw in the next cycle
 
-always, file2
 * make it to the last test
 
-long-running, file3
 * steps that take seconds
 * same thing afterwards
 
